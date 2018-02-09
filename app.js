@@ -115,5 +115,6 @@ function isElementOnScreen(id) {
     markerIndex = names.indexOf(id);
     var element = $(`section[data-index="${markerIndex}"]`)[0];
     var bounds = element.getBoundingClientRect();
-    return bounds.top < (window.innerHeight + 100) && bounds.bottom > 0;
+    console.log(bounds.top, bounds.bottom);
+    return bounds.top < (window.innerHeight + 100) && bounds.bottom > 100;
 }
